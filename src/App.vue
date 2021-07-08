@@ -2,18 +2,22 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <EjercicioUno />
   <EjercicioDos />
+  <EjercicioTres />
 </template>
 
 <script>
 
 import EjercicioUno from "./components/ejercicio-1.vue";
-import EjercicioDos from "./components/ejercicioDos.vue"
+import EjercicioDos from "./components/ejercicioDos.vue";
+import EjercicioTres from "./components/ejercicioTres.vue";
+
 
 export default {
   name: 'App',
   components: {
     EjercicioUno,
-    EjercicioDos
+    EjercicioDos,
+    EjercicioTres
   }
 }
 </script>
