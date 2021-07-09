@@ -7,9 +7,7 @@ solo las personas que están activas. -->
   <h1>Lista de personas activas:</h1>
   <ul id="example-1">
     <li v-for="item in items" :key="item.nombre">
-        {{ console.log (items.activo)}}
-      <div v-if="items.activo === 'true'">
-        {{ console.log (items.activo)}}
+      <div v-if="item.activo">
         {{ item.nombre }}
         {{ item.apellido }}
       </div>
@@ -26,12 +24,12 @@ export default {
         {
           nombre: "Andres",
           apellido: "Ballesteros",
-          activo: 'true',
+          activo: false,
         },
         {
           nombre: "Mabel",
           apellido: "Villada",
-          activo: true,
+          activo: false,
         },
         {
           nombre: "Yuli",
@@ -79,4 +77,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+li {
+  list-style: none;
+}
+</style>
